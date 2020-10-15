@@ -1,6 +1,8 @@
 import sys
 
-participant = print(sys.stdin.read())
+participant = sys.stdin
+
+sys.stdout.write(participant.readline().strip() + '\n')
 participant_nr = participants.readline()
 names = {}
 for i in range(int(participant_nr)):
